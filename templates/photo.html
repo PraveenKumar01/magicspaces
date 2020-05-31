@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Magic Spaces</title>
+
+    <link rel="stylesheet" href="../static/homepage.css">
+
+    <div class="header">
+        <form methods="POST" action='/login'>
+            <h1>Welcome,{{temp}}!</h1>
+        </form>
+
+    </div>
+
+    <div class="topnav">
+        <a href="#">Home</a>
+        <a href="# ">Photo Selection</a>
+        <a href="# ">Link1</a>
+        <a href="# ">Link2</a>
+    </div>
+
+    <div class="row">
+        <form action="/login" methods="post">
+
+            {% for item in arrimage %}
+
+            <div class="column">
+
+                <img src={{item[0]}}>
+
+            </div>
+
+            {% endfor %}
+            <!-- <div class="column ">
+
+                <img src="../static/images/praveenkumarm/apple2.png " alt="imag2 ">
+
+            </div> -->
+        </form>
+    </div>
+
+</head>
+
+</html>
